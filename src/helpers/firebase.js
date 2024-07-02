@@ -1,6 +1,7 @@
 // JavaScript
 // src.firebase.js
 import firebase from "firebase";
+import { config } from "dotenv";
 
 // For test
 // const firebaseConfig = {
@@ -16,7 +17,7 @@ import firebase from "firebase";
 
 // For Live
 const firebaseConfig = {
-  apiKey: "AIzaSyAxgGc3Z8MCeJ_Z82oMMV4lkMSiPrpKVoM",
+  apiKey: process.env.apiKey,
   authDomain: "coinlocator.firebaseapp.com",
   databaseURL: "https://coinlocator-default-rtdb.firebaseio.com",
   projectId: "coinlocator",
